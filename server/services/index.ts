@@ -32,13 +32,13 @@ export const schema = createSchema({
              * Hello world resolver
              * @returns {string} A greeting message
              */
-            hello: () => 'world',
+            hello: (): string => 'world',
 
             /**
              * Ping resolver for health checks
              * @returns {string} "pong" confirmation response
              */
-            ping: () => 'pong',
+            ping: (): string => 'pong',
         },
     },
 })

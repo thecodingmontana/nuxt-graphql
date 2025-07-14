@@ -2,7 +2,12 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/icon'],
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/fonts',
+    '@nuxt/icon',
+    '@nuxtjs/apollo',
+  ],
   eslint: {
     config: {
       stylistic: true,
@@ -15,5 +20,12 @@ export default defineNuxtConfig({
   },
   future: {
     compatibilityVersion: 4,
+  },
+  apollo: {
+    clients: {
+      default: {
+        httpEndpoint: process.env.GQL_HOST!
+      }
+    },
   },
 })
