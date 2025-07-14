@@ -1,20 +1,28 @@
-# 🚀 Nuxt with GraphQL Yoga
+# 🚀 Nuxt with GraphQL Yoga and Client
 
-A modern, high-performance Nuxt 4 starter template with GraphQL Yoga integration for building robust GraphQL APIs.
+A modern, high-performance Nuxt 4 starter template with GraphQL Yoga server and GraphQL client integration for building and consuming robust GraphQL APIs.
 
 ## ✨ Introduction
 
-This project demonstrates how to integrate GraphQL Yoga with Nuxt 4, providing a powerful backend for your Nuxt applications. GraphQL Yoga is a fully-featured GraphQL server with focus on easy setup, performance and great developer experience.
+This project demonstrates how to integrate GraphQL Yoga with Nuxt 4, providing a powerful backend and a GraphQL client in the frontend for seamless data fetching. GraphQL Yoga is a fully-featured GraphQL server with focus on easy setup, performance and great developer experience.  
+The client is pre-configured to connect to your API endpoint and use GraphQL queries and mutations easily.
 
-## 🔗 GraphQL Yoga Integration
+## 🔗 GraphQL Yoga Server
 
-This template comes with pre-configured GraphQL Yoga setup:
+This template comes with a pre-configured GraphQL Yoga setup:
 
 - 🌐 Accessible GraphQL API endpoint at `/api/graphql`
 - 💓 Health check endpoint at `/api/graphql/health`
 - 🧪 Interactive Apollo Sandbox for testing queries
 - 📋 Server-side schema definition and resolvers
 - 🛡️ Type-safe integration with Nuxt's Nitro server
+
+## 🔗 GraphQL Client
+
+- 🎯 Pre-configured client that connects to `/api/graphql`
+- 🚀 Easy to use composables and hooks for queries and mutations
+- ⚛️ Supports SSR and client-side fetching
+- 🔄 Works seamlessly with the Nuxt ecosystem
 
 ## 📘 Features
 
@@ -23,11 +31,13 @@ This template comes with pre-configured GraphQL Yoga setup:
 - 📱 Built-in responsive Apollo Sandbox interface
 - 🧩 Modular schema design
 - 🔒 Type-safe GraphQL implementation
+- 🔗 GraphQL client ready-to-use in your pages and components
 
 ## 📚 Learn More
 
 - [GraphQL Yoga Documentation](https://the-guild.dev/graphql/yoga-server)
 - [Nuxt Documentation](https://nuxt.com/docs)
+- [Apollo Client Documentation](https://www.apollographql.com/docs/react) or [urql](https://formidable.com/open-source/urql/)
 - [Apollo Sandbox Documentation](https://www.apollographql.com/docs/studio/explorer/sandbox)
 
 ## 📊 Using the GraphQL API
@@ -42,9 +52,9 @@ query {
   hello
   ping
 }
-```
 
-3. Integrate with your frontend using your favorite GraphQL client
+
+3. Use the provided GraphQL client to query and mutate data directly from your Nuxt components.
 
 ## 🛠️ Setup
 
