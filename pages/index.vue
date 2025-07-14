@@ -17,7 +17,7 @@ const { data, error, status } = await useAsyncQuery(query)
       {{ error }}
     </div>
     <div v-else>
-      This data is fetched from GraphQL  {{ data }}
+      This data is fetched from GraphQL Yoga Server {{ data }}
     </div>
     <a href="/api/graphql">Apollo Sandbox</a>
   </main>
