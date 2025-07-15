@@ -7,7 +7,10 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "prepare": "husky"
   },
   "dependencies": {
     "@nuxt/eslint": "1.5.2",
@@ -22,8 +25,15 @@
   },
   "packageManager": "pnpm@10.13.1",
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@eslint/js": "^9.31.0",
     "@graphql-eslint/eslint-plugin": "^4.4.0",
     "@nuxtjs/apollo": "5.0.0-alpha.14",
-    "add": "^2.0.6"
+    "add": "^2.0.6",
+    "eslint-merge-processors": "^2.0.0",
+    "eslint-plugin-vue": "^10.3.0",
+    "eslint-processor-vue-blocks": "^2.0.0",
+    "husky": "^9.1.7"
   }
 }

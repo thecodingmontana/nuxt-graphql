@@ -1,0 +1,12 @@
+type Query {
+  """
+  A simple hello world query that returns a greeting
+  """
+  hello: String
+
+  """
+  Health check query to verify the GraphQL service is running
+  """
+  ping: String
+  love: String
+}
