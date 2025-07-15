@@ -22,6 +22,8 @@
   },
   "packageManager": "pnpm@10.13.1",
   "devDependencies": {
-    "@nuxtjs/apollo": "5.0.0-alpha.14"
+    "@graphql-eslint/eslint-plugin": "^4.4.0",
+    "@nuxtjs/apollo": "5.0.0-alpha.14",
+    "add": "^2.0.6"
   }
 }
