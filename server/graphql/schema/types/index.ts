@@ -6,5 +6,6 @@ const readGraphQLFile = (filename: string): string => {
 }
 
 export const typeDefs = [
-    readGraphQLFile('test.graphql')
+    readGraphQLFile('test.graphql'),
+    // add all your graphql types files here
 ]

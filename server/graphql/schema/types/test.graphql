@@ -10,3 +10,8 @@ type Query {
   ping: String
   love: String
 }
+
+type Mutation {
+  doSomething: String
+  ping: String
+}

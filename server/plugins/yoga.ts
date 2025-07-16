@@ -7,7 +7,7 @@
 import { createYoga } from 'graphql-yoga'
 import type { H3Event } from 'h3'
 import { defineEventHandler, sendWebResponse, toWebRequest } from 'h3'
-import { schema } from '../services'
+import { schema } from '../graphql/schema'
 
 // API endpoint configuration
 const routePath = '/api/graphql'
@@ -22,7 +22,7 @@ const createYogaServer = createYoga<{
     graphqlEndpoint: routePath,
     healthCheckEndpoint: healthCheckPath,
     graphiql: true,
-    schema: schema,
+    schema,
     // Custom Apollo Sandbox UI implementation
     renderGraphiQL: () => {
         return `

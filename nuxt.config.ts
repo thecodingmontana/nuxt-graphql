@@ -1,4 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from "@tailwindcss/vite";
+import Components from 'unplugin-vue-components/vite'
+import MotionResolver from 'motion-v/resolver'
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
@@ -7,6 +11,8 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxtjs/apollo',
+    'motion-v/nuxt',
+    '@nuxt/scripts',
   ],
   eslint: {
     config: {
@@ -28,4 +34,21 @@ export default defineNuxtConfig({
       }
     },
   },
+  css: ['~/assets/css/tailwind.css'],
+  vite: {
+    plugins: [
+      tailwindcss(),
+      Components({
+        dts: true,
+        resolvers: [
+          MotionResolver(),
+        ],
+      }),
+    ],
+  },
+  runtimeConfig: {
+    public: {
+      gqlHost: process.env.GQL_HOST
+    }
+  }
 })

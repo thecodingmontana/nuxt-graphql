@@ -10,20 +10,30 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
   },
   "dependencies": {
+    "@graphql-tools/stitch": "^9.4.26",
     "@nuxt/eslint": "1.5.2",
     "@nuxt/fonts": "0.11.4",
     "@nuxt/icon": "1.15.0",
+    "@nuxt/scripts": "0.11.9",
+    "@tailwindcss/vite": "^4.1.11",
+    "@unhead/vue": "^2.0.12",
     "dotenv": "^17.2.0",
+    "drizzle-graphql": "^0.8.5",
     "drizzle-orm": "^0.44.3",
     "eslint": "^9.31.0",
     "graphql": "^16.11.0",
     "graphql-yoga": "^5.15.1",
+    "motion-v": "^1.5.0",
+    "nanoid": "^5.1.5",
     "nuxt": "^3.17.7",
     "pg": "^8.16.3",
     "postgres": "^3.4.7",
+    "tailwindcss": "^4.1.11",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
   },
@@ -31,15 +41,11 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "@eslint/js": "^9.31.0",
     "@graphql-eslint/eslint-plugin": "^4.4.0",
     "@nuxtjs/apollo": "5.0.0-alpha.14",
     "@types/pg": "^8.15.4",
-    "add": "^2.0.6",
     "drizzle-kit": "^0.31.4",
-    "eslint-merge-processors": "^2.0.0",
-    "eslint-plugin-vue": "^10.3.0",
-    "eslint-processor-vue-blocks": "^2.0.0",
-    "husky": "^9.1.7"
+    "husky": "^9.1.7",
+    "unplugin-vue-components": "^28.8.0"
   }
 }
