@@ -16,7 +16,7 @@ export const quote = pgTable(
     {
         id: varchar('id', { length: 12 }).primaryKey().$defaultFn(() => generateNanoId()),
         quote: text('quote').notNull(),
-        author: text('quote').notNull(),
+        author: text('author').notNull(),
         created_at: timestamp('created_at', { mode: 'date', precision: 3 })
             .notNull()
             .defaultNow(),

@@ -4,41 +4,43 @@ A modern, high-performance Nuxt 4 starter template with GraphQL Yoga server and 
 
 ## ✨ Introduction
 
-This project demonstrates how to integrate GraphQL Yoga with Nuxt 4, providing a powerful backend and a GraphQL client in the frontend for seamless data fetching. GraphQL Yoga is a fully-featured GraphQL server with focus on easy setup, performance and great developer experience.  
-The client is pre-configured to connect to your API endpoint and use GraphQL queries and mutations easily.
+This project shows how to integrate GraphQL Yoga with Nuxt, offering a fast backend and a GraphQL client for seamless data fetching. The client is ready to connect to your API, run queries and mutations, extend with custom ones, and supports **drizzle-graphql** to generate a GraphQL server from a Drizzle schema easily.
 
 ## 🔗 GraphQL Yoga Server
 
 This template comes with a pre-configured GraphQL Yoga setup:
 
-- 🌐 Accessible GraphQL API endpoint at `/api/graphql`
-- 💓 Health check endpoint at `/api/graphql/health`
-- 🧪 Interactive Apollo Sandbox for testing queries
-- 📋 Server-side schema definition and resolvers
+- 🌐 GraphQL API endpoint at `/api/graphql`
+- 💓 Health check at `/api/graphql/health`
+- 🧪 Interactive Apollo Sandbox for testing
+- 📋 Modular schema and resolvers
 - 🛡️ Type-safe integration with Nuxt's Nitro server
+- 🧩 Ability to extend with your own queries and mutations
+- 🔷 Supports drizzle-graphql schema out of the box
 
 ## 🔗 GraphQL Client
 
-- 🎯 Pre-configured client that connects to `/api/graphql`
-- 🚀 Easy to use composables and hooks for queries and mutations
+- 🎯 Pre-configured client for `/api/graphql`
+- 🚀 Easy composables and hooks for queries and mutations
 - ⚛️ Supports SSR and client-side fetching
-- 🔄 Works seamlessly with the Nuxt ecosystem
+- 🔄 Works seamlessly with Nuxt
 
 ## 📘 Features
 
-- ⚡ Fast setup with minimal configuration
-- 🔄 Hot Module Replacement during development
-- 📱 Built-in responsive Apollo Sandbox interface
-- 🧩 Modular schema design
-- 🔒 Type-safe GraphQL implementation
-- 🔗 GraphQL client ready-to-use in your pages and components
+- ⚡ Fast setup with minimal config
+- 🔄 Hot Module Replacement
+- 📱 Apollo Sandbox
+- 🔒 Type-safe GraphQL
+- 🧩 drizzle-graphql integration for schema-first development
+- 🔗 Client ready-to-use in components
 
 ## 📚 Learn More
 
-- [GraphQL Yoga Documentation](https://the-guild.dev/graphql/yoga-server)
-- [Nuxt Documentation](https://nuxt.com/docs)
-- [Apollo Client Documentation](https://www.apollographql.com/docs/react) or [urql](https://formidable.com/open-source/urql/)
-- [Apollo Sandbox Documentation](https://www.apollographql.com/docs/studio/explorer/sandbox)
+- [GraphQL Yoga](https://the-guild.dev/graphql/yoga-server)
+- [Nuxt](https://nuxt.com/docs)
+- [Apollo Client](https://www.apollographql.com/docs/react) or [urql](https://formidable.com/open-source/urql/)
+- [drizzle-graphql](https://orm.drizzle.team/docs/graphql)
+- [Apollo Sandbox](https://www.apollographql.com/docs/studio/explorer/sandbox)
 
 ## 📊 Using the GraphQL API
 
@@ -103,4 +105,4 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 ---
 
-Credits [productdevbook](https://github.com/productdevbook) | [GitHub](https://github.com/productdevbook) | [Website](https://productdevbook.com)
+Credits [productdevbook](https://github.com/productdevbook)

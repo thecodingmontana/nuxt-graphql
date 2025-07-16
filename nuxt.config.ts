@@ -13,7 +13,8 @@ export default defineNuxtConfig({
     '@nuxtjs/apollo',
     'motion-v/nuxt',
     '@nuxt/scripts',
-    'shadcn-nuxt'
+    'shadcn-nuxt',
+    '@nuxtjs/color-mode'
   ],
   eslint: {
     config: {
