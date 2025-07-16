@@ -7,7 +7,7 @@
 import { createYoga } from 'graphql-yoga'
 import type { H3Event } from 'h3'
 import { defineEventHandler, sendWebResponse, toWebRequest } from 'h3'
-import { schema } from '../assets/graphql/schema'
+import { schema } from '../graphql/schema'
 
 // API endpoint configuration
 const routePath = '/api/graphql'

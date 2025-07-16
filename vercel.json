@@ -1,7 +1,0 @@
-{
-  "functions": {
-    "server/api/**/*.ts": {
-      "includeFiles": "server/graphql/schema/types/**/*.graphql"
-    }
-  }
-}
