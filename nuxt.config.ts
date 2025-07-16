@@ -69,4 +69,15 @@ export default defineNuxtConfig({
     url: process.env.NUXT_PUBLIC_SITE_URL,
     name: process.env.NUXT_PUBLIC_SITE_NAME,
   },
+  nitro: {
+    experimental: {
+      wasm: true,
+    },
+    serverAssets: [
+      {
+        baseName: 'graphql',
+        dir: './server/graphql/schema/types'
+      }
+    ]
+  }
 })

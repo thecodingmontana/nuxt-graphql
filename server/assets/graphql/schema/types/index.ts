@@ -1,12 +1,15 @@
-// Move files to: server/assets/graphql/schema/types/test.graphql
-
 import { readFileSync } from 'fs'
 import { resolve } from 'path'
 
 const readGraphQLFile = (filename: string): string => {
-    // In production, files are in the server assets
-    const filePath = resolve(process.cwd(), 'server/assets/graphql/schema/types', filename)
-    return readFileSync(filePath, 'utf8')
+  if (process.env.NODE_ENV === 'production') {
+    // In production, use Nitro's asset system
+    const assetPath = resolve(process.cwd(), 'server/graphql/schema/types', filename)
+    return readFileSync(assetPath, 'utf8')
+  } else {
+    // In development, use normal file reading
+    return readFileSync(resolve(process.cwd(), 'server/graphql/schema/types', filename), 'utf8')
+  }
 }
 
 export const typeDefs = [
