@@ -1,41 +1,42 @@
 <script setup lang="ts">
 import Footer from '~/components/Footer.vue';
+import { Toaster } from '~/components/ui/sonner';
 
 useHead({
   meta: [
-    { property: 'og:title', content: `Todos` },
+    { property: 'og:title', content: `This project uses GraphQL Yoga, Nuxt, Apollo Client, and Drizzle to provide a GraphQL server with custom queries and a ready frontend client.` },
     {
       name: 'description',
       content:
-        'A local-first todo app using RxDB, Drizzle ORM, and Nuxt.js. Built for seamless offline experience.',
+        'This project uses GraphQL Yoga, Nuxt, Apollo Client, and Drizzle to provide a GraphQL server with custom queries and a ready frontend client.',
     },
     {
       property: 'og:description',
       content:
-        'A local-first todo app using RxDB, Drizzle ORM, and Nuxt.js. Built for seamless offline experience.',
+        'This project uses GraphQL Yoga, Nuxt, Apollo Client, and Drizzle to provide a GraphQL server with custom queries and a ready frontend client.',
     },
     {
       property: 'og:url',
       content:
-        'A local-first todo app using RxDB, Drizzle ORM, and Nuxt.js. Built for seamless offline experience.',
+        'This project uses GraphQL Yoga, Nuxt, Apollo Client, and Drizzle to provide a GraphQL server with custom queries and a ready frontend client.',
     },
     {
       name: 'twitter:title',
       content:
-        'A local-first todo app using RxDB, Drizzle ORM, and Nuxt.js. Built for seamless offline experience.',
+        'This project uses GraphQL Yoga, Nuxt, Apollo Client, and Drizzle to provide a GraphQL server with custom queries and a ready frontend client.',
     },
     {
       name: 'twitter:description',
       content:
-        'A local-first todo app using RxDB, Drizzle ORM, and Nuxt.js. Built for seamless offline experience.',
+        'This project uses GraphQL Yoga, Nuxt, Apollo Client, and Drizzle to provide a GraphQL server with custom queries and a ready frontend client.',
     },
     {
       name: 'twitter:site',
       content:
-        'A local-first todo app using RxDB, Drizzle ORM, and Nuxt.js. Built for seamless offline experience.',
+        'This project uses GraphQL Yoga, Nuxt, Apollo Client, and Drizzle to provide a GraphQL server with custom queries and a ready frontend client.',
     },
   ],
-  title: `🚀 Nuxt with GraphQL Yoga and Client`,
+  title: `🚀 Nuxt with GraphQL Yoga and Apollo Client`,
 })
 </script>
 
@@ -45,6 +46,7 @@ useHead({
     <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <slot />
       <Footer />
+      <Toaster :rich-colors="true" :close-button="true" />
     </div>
   </main>
 </template>

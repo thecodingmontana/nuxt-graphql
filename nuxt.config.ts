@@ -14,7 +14,8 @@ export default defineNuxtConfig({
     'motion-v/nuxt',
     '@nuxt/scripts',
     'shadcn-nuxt',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    'nuxt-og-image'
   ],
   eslint: {
     config: {
@@ -63,5 +64,9 @@ export default defineNuxtConfig({
      * @default "./components/ui"
      */
     componentDir: './components/ui'
-  }
+  },
+  site: {
+    url: process.env.NUXT_PUBLIC_SITE_URL,
+    name: process.env.NUXT_PUBLIC_SITE_NAME,
+  },
 })

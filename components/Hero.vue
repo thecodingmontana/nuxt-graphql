@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import { PlusIcon } from 'lucide-vue-next';
 import { motion } from 'motion-v'
+import CopyToClipboard from './CopyToClipboard.vue';
+
+const githubUrl = "https://github.com/thecodingmontana/nuxt-graphql.git"
 </script>
 
 <template>
-  <section class="container py-8 sm:py-12 md:py-16 lg:py-18 text-center relative overflow-hidden px-4 sm:px-6 lg:px-8 flex items-center justify-center">
+  <section class="container py-8 text-center relative overflow-hidden px-4 sm:px-6 lg:px-8 flex items-center justify-center">
     <div class="mx-auto max-w-6xl relative z-10 space-y-10">
       <motion.div :initial="{ opacity: 0, y: -20 }" :animate="{ opacity: 1, y: 0 }" class="flex justify-center">
         <NuxtLink
@@ -61,6 +64,9 @@ import { motion } from 'motion-v'
       <motion.p :initial="{ opacity: 0, y: -20 }" :animate="{ opacity: 1, y: 0 }" :transition="{ delay: 0.4, ease: 'easeIn' }" class="text-base sm:text-lg mb-6 sm:mb-8 max-w-lg mx-auto leading-relaxed transition-colors duration-300 px-4 sm:px-0 text-gray-600 dark:text-gray-200">
         This project uses GraphQL Yoga, Nuxt, Apollo Client, and Drizzle to provide a GraphQL server with custom queries and a ready frontend client. Try it in the sandbox below.
       </motion.p>
+      <motion.div :initial="{ opacity: 0, y: -20 }" :animate="{ opacity: 1, y: 0 }" :transition="{ delay: 0.6, ease: 'easeIn' }" class="max-w-sm mx-auto">
+        <CopyToClipboard :text="'git clone ' + githubUrl" />
+      </motion.div>
     </div>
   </section>
 </template>
