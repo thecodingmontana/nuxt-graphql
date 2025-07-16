@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     '@nuxtjs/apollo',
     'motion-v/nuxt',
     '@nuxt/scripts',
+    'shadcn-nuxt'
   ],
   eslint: {
     config: {
@@ -50,5 +51,16 @@ export default defineNuxtConfig({
     public: {
       gqlHost: process.env.GQL_HOST
     }
+  },
+  shadcn: {
+    /**
+     * Prefix for all the imported component
+     */
+    prefix: '',
+    /**
+     * Directory that the component lives in.
+     * @default "./components/ui"
+     */
+    componentDir: './components/ui'
   }
 })
